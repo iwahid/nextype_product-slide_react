@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/nextype_product-slide_react/static/css/main.9cb1f106.chunk.css",
-    "main.js": "/nextype_product-slide_react/static/js/main.73c80e59.chunk.js",
-    "main.js.map": "/nextype_product-slide_react/static/js/main.73c80e59.chunk.js.map",
+    "main.js": "/nextype_product-slide_react/static/js/main.724de1ca.chunk.js",
+    "main.js.map": "/nextype_product-slide_react/static/js/main.724de1ca.chunk.js.map",
     "runtime-main.js": "/nextype_product-slide_react/static/js/runtime-main.32088140.js",
     "runtime-main.js.map": "/nextype_product-slide_react/static/js/runtime-main.32088140.js.map",
     "static/js/2.1ae62cb8.chunk.js": "/nextype_product-slide_react/static/js/2.1ae62cb8.chunk.js",
     "static/js/2.1ae62cb8.chunk.js.map": "/nextype_product-slide_react/static/js/2.1ae62cb8.chunk.js.map",
     "index.html": "/nextype_product-slide_react/index.html",
-    "precache-manifest.e511c484ca38958d3c7c3a1d35755a45.js": "/nextype_product-slide_react/precache-manifest.e511c484ca38958d3c7c3a1d35755a45.js",
+    "precache-manifest.aa70f9da7758c9aaccc390b25d922a49.js": "/nextype_product-slide_react/precache-manifest.aa70f9da7758c9aaccc390b25d922a49.js",
     "service-worker.js": "/nextype_product-slide_react/service-worker.js",
     "static/css/main.9cb1f106.chunk.css.map": "/nextype_product-slide_react/static/css/main.9cb1f106.chunk.css.map",
     "static/js/2.1ae62cb8.chunk.js.LICENSE.txt": "/nextype_product-slide_react/static/js/2.1ae62cb8.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.32088140.js",
     "static/js/2.1ae62cb8.chunk.js",
     "static/css/main.9cb1f106.chunk.css",
-    "static/js/main.73c80e59.chunk.js"
+    "static/js/main.724de1ca.chunk.js"
   ]
 }
