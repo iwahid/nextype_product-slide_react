@@ -1,5 +1,4 @@
 import React from 'react'
-import contentImage from './image-1.png'
 
 function Slide({ product }) {
 

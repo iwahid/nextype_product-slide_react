@@ -49,7 +49,7 @@
       "promotion": [],
       "price": {
         "oldPrice": "",
-        "currentPrice": "3200"
+        "currentPrice": "3200 руб."
       },
       "specifications" : [
         {"key":"Тип", "value":"обычный"},
