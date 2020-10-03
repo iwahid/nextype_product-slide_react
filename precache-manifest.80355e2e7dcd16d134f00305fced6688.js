@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "11bca6a3b20beb50443c9d758115a75a",
+    "revision": "601b5200022de87c4d6fc9604d567f57",
     "url": "/nextype_product-slide_react/index.html"
   },
   {
-    "revision": "fe4635b396a637dbb4e5",
+    "revision": "2853198e7345e12a8fec",
     "url": "/nextype_product-slide_react/static/css/main.9cb1f106.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nextype_product-slide_react/static/js/2.1ae62cb8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fe4635b396a637dbb4e5",
-    "url": "/nextype_product-slide_react/static/js/main.724de1ca.chunk.js"
+    "revision": "2853198e7345e12a8fec",
+    "url": "/nextype_product-slide_react/static/js/main.29c124f3.chunk.js"
   },
   {
     "revision": "2ae3122442ee74bce7f4",
