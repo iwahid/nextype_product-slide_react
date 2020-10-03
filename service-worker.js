@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/nextype_product-slide_react/precache-manifest.80355e2e7dcd16d134f00305fced6688.js"
+  "/nextype_product-slide_react/precache-manifest.9d0c9d0ee5c2ec70967241749b25ab44.js"
 );
 
 self.addEventListener('message', (event) => {
