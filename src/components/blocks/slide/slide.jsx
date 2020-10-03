@@ -1,62 +1,55 @@
 import React from 'react'
 import contentImage from './image-1.png'
 
-function Slide() {
+function Slide({ product }) {
+
+  const { id, imageUrl, linkUrl, title, description, promotion, price, specifications } = product
   return (
-    <div class="slide" >
-      <div class="slide__left-section">
-        <div class="img-container">
-          <img src="https://www.e-katalog.ru/jpg_zoom1/1233564.jpg" alt="Сейф Aiko TT-28" />
+    <div className="slide" >
+      <div className="slide__left-section">
+        <div className="img-container">
+          <img src={imageUrl} alt={title} />
         </div>
 
       </div>
-      <div class="slide__right-section">
-        <ul class="promo-list">
-          <li><span>Акция</span></li>
+      <div className="slide__right-section">
+        <ul className="promo-list">
+          {
+            promotion && promotion.map((item, index) => <li key={index}><span>{item}</span></li>)
+          }
+
         </ul>
         <div className="product">
-          <h2 class="product__title">Сейф Aiko TT-28</h2>
-          <h3 class="product__description">Сейф Aiko TT-28 предназначен для хранения короткоствольного и
-                травматического оружия, пистолетов, холодного оружия (охотничьи ножи) в домашних условиях.</h3>
+          <h2 className="product__title">{title}</h2>
+          <h3 className="product__description">{description}</h3>
 
-          <ul class="product__specifications">
-            <li>
-              <span class="property">Масса</span>
-              <span class="separator"></span>
-              <span class="value">8.5 кг</span>
-            </li>
-            <li>
-              <span class="property">Габариты</span>
-              <span class="separator"></span>
-              <span class="value">280x340x295 мм</span>
-            </li>
-            <li>
-              <span class="property">Производство</span>
-              <span class="separator"></span>
-              <span class="value">Россия</span>
-            </li>
-            <li>
-              <span class="property">Объём</span>
-              <span class="separator"></span>
-              <span class="value">22/11 л</span>
-            </li>
+          <ul className="product__specifications">
+            {
+              specifications && specifications.map((item, index) => {
+                return (
+                  < li key={index} >
+                    <span className="property">{item.key}</span>
+                    <span className="separator"></span>
+                    <span className="value">{item.value}</span>
+                  </li>
+                )
+              })
+            }
           </ul>
 
           <hr />
-          <div class="product__purchase">
-            <div class="product__price">
-              <span class="current-price">29 900 руб.</span>
-              <span class="old-price">34 590 руб.</span>
-
+          <div className="product__purchase">
+            <div className="product__price">
+              <span className="current-price">{price.currentPrice}</span>
+              <span className="old-price">{price.oldPrice && price.oldPrice}</span>
             </div>
-            <button class="more-details">
-              Подробнее
-                </button>
+            {/* здесь вместо обычной ссылки должен будет находится элемент Link */}
+            <a className="more-details" href={linkUrl} alt={`Посмотреть страницу товара ${title}`}>Подробнее</a>
           </div>
         </div>
 
       </div>
-    </div>
+    </div >
   )
 }
 

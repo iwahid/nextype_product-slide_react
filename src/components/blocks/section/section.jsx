@@ -2,7 +2,8 @@ import React from 'react'
 import Slider from './../slider/slider'
 import Slide from './../slide/slide'
 
-function Section() {
+function Section({productList}) {
+  /* Насколько я понял, этот фрагмент представляет собой панель с табами. Одно из наиболее быстрых решений - вкладки представлены кнопками, а первая (активная) будет заменяться на h1 - нет необходимости в интерактивности этого элемента (он уже выбран), к тому же, возможно, это может повлиять в лучшую сторону в плане семантики (но не уверен в этом)  */
   return (
     <section className="section">
       <header className="section__header">
@@ -15,12 +16,8 @@ function Section() {
         </p>
       </header>
 
-      {/* отдельный компонент */}
-      <div className="section__slider">
-
-      </div>
-      <Slider></Slider>
-     {/*  <Slide></Slide> */}
+      <Slider
+      productList={productList}/>
 
     </section>
   )
