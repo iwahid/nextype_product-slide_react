@@ -1,0 +1,33 @@
+/* Импорт normalize */
+@import './base/_normalize.less';
+/* Общие стили для проекта */
+@import './base/_base-style.less';
+
+
+/* подключение стилей компонентов */
+/* секция целиком */ 
+@import './components/blocks/section/section.css';
+/* слайдер */
+@import './components/blocks/slider/slider.css';
+/* отдельные слайды */
+@import './components/blocks/slide/slide.css';
+
+
+section {
+
+
+  .swiper-container {
+    border: 1px solid #E1E1E6;
+    width: 100%;
+    padding: 2rem;
+
+    @media (max-width: 768px) {
+      padding: 1rem;
+    }
+
+    .swiper-wrapper {
+
+     
+    }
+  }
+}

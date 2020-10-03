@@ -1,0 +1,103 @@
+.slider-wrapper {
+  margin: 0;
+}
+
+.slider {
+  border: 1px solid #E1E1E6;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+
+  &__list {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+
+    .slide-wrapper {
+      min-width: 100%;
+      transition: 0.5s;
+    }
+  }
+
+  .toPrev,
+  .toNext {
+    position: absolute;
+    top: 50%;
+    z-index: 9999;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 2px;
+    width: 4.4rem;
+    height: 4.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.2));
+    /* тени сделал более заметными ради того, что бы кнопки не терялись на общем фоне */
+
+    @media (max-width: 768px) {
+      top: 25%
+    }
+  }
+
+  .toPrev {
+    background-image: url("./icon/Arrow.svg");
+    left: -22px;
+
+    @media (max-width: 768px) {
+      left: 2px;
+    }
+  }
+
+  .toNext {
+    background-image: url("./icon/Arrow.svg");
+    transform: rotate(180deg);
+    right: -22px;
+
+    @media (max-width: 768px) {
+      right: 2px
+    }
+  }
+
+
+  &__pagination {
+    position: absolute;
+    bottom: 4rem;
+    width: 100%;
+    height: 0.4rem;
+    display: flex;
+    justify-content: center;
+
+    .bullet {
+
+      display: inline-block;
+      border-radius: 0;
+      width: 1.6rem;
+      height: 0.4rem;
+      text-align: center;
+      line-height: 30px;
+      font-size: 12px;
+      color: #000;
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.2);
+      margin-right: 8px;
+      cursor: pointer;
+    }
+
+    .bullet--active {
+      width: 2.4rem;
+      height: 0.4rem;
+      background: #2244CC;
+      margin-right: 8px;
+    }
+  }
+}
